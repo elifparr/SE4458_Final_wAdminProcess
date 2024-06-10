@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <span>Hotel Management</span>
+        </div>
+        <div class="right" id="navButtons">
+            <!-- JavaScript ile doldurulacak -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="hotel-info">
+            <img id="hotelImage" alt="Hotel Image">
+            <div class="hotel-details">
+                <h1 id="hotelName"></h1>
+                <p id="hotelLocation"></p>
+                <div class="stars" id="hotelStars"></div>
+                <p id="hotelRating"></p>
+                <p id="hotelPrice"></p>
+                <button id="reserveButton">Rezervasyon Yap</button>
+            </div>
+        </div>
+        <div class="map-container">
+            <h2>Otel Lokasyonu</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="hotel-details.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
